@@ -7,7 +7,7 @@ ENV PORT=5000
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["estetica-api/estetica-api.csproj", "estetica-api/"]
-RUN dotnet restore "estetica-api/estetica-api-api.csproj"
+RUN dotnet restore "estetica-api/estetica-api.csproj"
 COPY . .
 WORKDIR "/src/estetica-api"
 RUN dotnet build "estetica-api.csproj" -c Release -o /app/build
