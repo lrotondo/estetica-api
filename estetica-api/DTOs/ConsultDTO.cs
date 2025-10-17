@@ -5,7 +5,7 @@ namespace dentist_panel_api.DTOs;
 
 public class ConsultDTO: AuditableEntity
 {
-    public ApplicationUser Owner { get; set; }
+    public ApplicationUserDTO Owner { get; set; }
     public Guid OwnerId { get; set; }
     public PatientDTO Patient { get; set; }
     public DateTime Date { get; set; }

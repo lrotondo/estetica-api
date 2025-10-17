@@ -4,7 +4,7 @@ namespace dentist_panel_api.DTOs
 {
     public class PatientDTO : AuditableEntity
     {
-        public ApplicationUser Owner { get; set; }
+        public ApplicationUserDTO Owner { get; set; }
         public Guid OwnerId { get; set; }
         public string Name { get; set; }
         public string AfipId { get; set; }
